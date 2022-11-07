@@ -62,3 +62,11 @@
       flex-direction: row;
     }
   }
+
+  .top-nav{
+    background: linear-gradient(200.67deg, #509F9F 43.07%, rgba(199, 41, 69, 0.28) 100%);
+  }
+
+  .layout {
+    min-height: 75vh;
+  }

@@ -1,15 +1,17 @@
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import my from "../assets/p.jpg";
+import { Layout } from "./Layout";
 
 export const AboutMe = () => {
   return (
-    <Container id="about-me" class=" mt-3 py-5">
-      <div class="title">
+    <Layout>
+    <Container id="about-me" className=" mt-3 py-5">
+      <div className="title">
         <span>About Me</span>
       </div>
       <Row>
-        <Col md="5" class=" mb-5">
+        <Col md="5" className=" mb-5">
           <img src={my} alt="my" width="100%" />
         </Col>
         <Col md="7">
@@ -31,5 +33,6 @@ export const AboutMe = () => {
         </Col>
       </Row>
     </Container>
+    </Layout>
   );
 };

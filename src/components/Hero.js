@@ -1,14 +1,15 @@
 import React from "react";
 import my from "../assets/img.png";
-import { TopNav } from "./TopNav";
+
+
 import { Container, Row, Col, Button } from "react-bootstrap";
+import { Layout } from "./Layout";
 
 export const Hero = () => {
   return (
     <div className="hero">
-      <TopNav />
-
-      <Container>
+      <Layout>
+      <Container className="mt-5">
         <Row className="mt-5 py-3">
           <Col md="6" className="text-center order-md-2">
             <img src={my} width="80%" alt="" />
@@ -23,6 +24,7 @@ export const Hero = () => {
           </Col>
         </Row>
       </Container>
+      </Layout>
     </div>
   );
 };
